@@ -1,11 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 function ComponenetProfile(props) {
     return (
         <div>
             {props.handleName(props.fullName)}
-            <h1> {props.fullName}</h1>
+            <h1 style={{color:"red"}}> {props.fullName}</h1>
             <p> {props.bio}</p>
             <h3>{props.profession}</h3>
             {props.children}
@@ -20,11 +20,11 @@ ComponenetProfile.defaultProps={
     bio : "default value",
     profession :"default value"
 }
-ComponenetProfile.PropTypes={
-    fullName: PropTypes.string,
-    bio: PropTypes.string.isRequired,
-    profession : PropTypes.string,
-    handleName :PropTypes.func
+ComponenetProfile.propTypes={
+    fullName: propTypes.string.isRequired,
+    bio: propTypes.string.isRequired,
+    profession : propTypes.string,
+    handleName :propTypes.func
 }
 
 export default ComponenetProfile

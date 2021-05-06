@@ -8,12 +8,12 @@ function App() {
   return (
     <div className="App">
       <ChildCompo 
-      fullName="Nermine Bouabdallah "
+      fullName="Nermine Bouabdallah" 
       bio="Hello"
       profession="Network engineer"
       handleName={handleName}>
         <div>
-          <img src={image} style={{width:300,height:300}}></img>
+          <img src={image} style={{width:300,height:300}} alt="profilePhoto"></img>
         </div>
 
 
